@@ -1,15 +1,15 @@
-const input = document.querySelector("input")
-const addBtn = document.querySelector(".inputField button")
-const ul = document.querySelector("ul")
+var input = document.querySelector("input")
+var addBtn = document.querySelector(".inputField button")
+var ul = document.querySelector("ul")
+var deleteAll = document.querySelector(".deleteAll buttton")
 
 
 addBtn.addEventListener("click", (e) =>{
-    const text = input.value;
-    const li = document.createElement("li")
-    const p = document.createElement("p")
-    p.textContent = text
+    var text = input.value;
+    var li = document.createElement("li")
+    var p = document.createElement("p")
+    li.textContent = text
 
-    li.appendChild(p)
     li.appendChild(addDeleteBtn());
     ul.appendChild(li);
 
@@ -17,9 +17,8 @@ addBtn.addEventListener("click", (e) =>{
 });
 function addDeleteBtn() {
     const deleteBtn = document.createElement('span')
-
-    deleteBtn.textContent = "X";
-    deleteBtn.className = "fa-solid fa-trash";
+    deleteBtn.textContent = 'X',
+    deleteBtn.className = "delete-btn";
 
     deleteBtn.addEventListener('click', (e) =>{
         const item = e.target.parentElement
@@ -27,3 +26,12 @@ function addDeleteBtn() {
     });
     return deleteBtn;
 };
+
+function remove_child() {
+    var list = document.getElementById('todoList');
+    var item = ul.lastElementChild;
+    deleteAll.addEventListener('click', ()=>{
+      list.removeChild(item);  
+    })
+    
+  }

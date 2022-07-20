@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Amatic+SC&family=Cinzel&family=Edu+NSW+ACT+Foundation&family=Ibarra+Real+Nova&family=Open+Sans:wght@300&family=Quicksand:wght@300&family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Amatic+SC&family=Cinzel&family=Edu+NSW+ACT+Foundation&family=Ibarra+Real+Nova&family=Mulish:wght@200&family=Open+Sans:wght@300&family=Playfair+Display&family=Quicksand:wght@300&family=Raleway:wght@100&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Playfair Display', serif;
 }
 body{
     height: 100vh;
@@ -59,7 +59,7 @@ body{
 
 }
 .todoList li{
-    font-size: 17px;
+    font-size: 12px;
     font-weight: bold;
     list-style: none;
     height: 45px;
@@ -67,7 +67,7 @@ body{
     position: relative;
     border-radius: 3px;
     margin-bottom: 6px;
-    padding: 0 15px;
+    padding: 0;
     cursor: default;
     overflow: hidden;
 
