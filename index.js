@@ -26,12 +26,3 @@ function addDeleteBtn() {
     });
     return deleteBtn;
 };
-
-function remove_child() {
-    var list = document.getElementById('todoList');
-    var item = ul.lastElementChild;
-    deleteAll.addEventListener('click', ()=>{
-      list.removeChild(item);  
-    })
-    
-  }
