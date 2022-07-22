@@ -26,3 +26,10 @@ function addDeleteBtn() {
     });
     return deleteBtn;
 };
+//function deleteAllul() {
+//    deleteAll.addEventListener('click', ()=>{
+//        var li = document.createElement("li")
+//        ul.removeChild(li);
+//
+//    })
+//}
