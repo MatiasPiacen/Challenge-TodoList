@@ -26,4 +26,3 @@ function addDeleteBtn() {
     });
     return deleteBtn;
 };
-hola como va todo
