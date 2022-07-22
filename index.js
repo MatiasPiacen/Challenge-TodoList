@@ -15,6 +15,7 @@ addBtn.addEventListener("click", (e) =>{
 
     input.value = "";
 });
+deleteAll.addEventListener('click', deleteAllul)
 function addDeleteBtn() {
     const deleteBtn = document.createElement('span')
     deleteBtn.textContent = 'X',
@@ -26,10 +27,7 @@ function addDeleteBtn() {
     });
     return deleteBtn;
 };
-//function deleteAllul() {
-//    deleteAll.addEventListener('click', ()=>{
-//        var li = document.createElement("li")
-//        ul.removeChild(li);
-//
-//    })
-//}
+function deleteAllul() {
+    ul.innerHTML = ""
+    
+}
