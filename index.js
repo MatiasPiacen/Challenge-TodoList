@@ -13,11 +13,8 @@ addBtn.addEventListener("click", () =>{
 
     input.value = "";
 });
- 
-    
-
-
 deleteAll.addEventListener('click', deleteAllUl)
+
 
 function addDeleteBtn() {
     const deleteBtn = document.createElement('span')
@@ -29,7 +26,6 @@ function addDeleteBtn() {
     });
     return deleteBtn;
 };
-
 function deleteAllUl() {
     ul.innerHTML = ""
 }
